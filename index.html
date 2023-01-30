@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Blog</h1>
+        <div id="header-elements">
+            <select id="filter-list" onchange="select1();">
+                <option value="1">pokaż 5 elementów</option>
+                <option value="2">pokaż 10 elementów</option>
+                <option value="3">pokaż 50 elementów</option>
+                <option value="4">pokaż 100 elementów</option>
+            </select>
+            <select id="sort-list" onchange="select2();">
+                <option value="1">od najnowszych</option>
+                <option value="2">od najstarszych</option>
+            </select>
+        </div>
+    </header>
+    <div id="container">
+
+    </div>
+    <footer>
+        <div id="pagination">
+            <button onclick="prevPage();" id="btn-prev"><</button>
+            <p id="change-page">strona: 1 </p>
+            <button onclick="nextPage();" id="btn-next">></button>
+        <div>
+    </footer>
+        <script src="main.js"></script>
+</body>
+</html>
